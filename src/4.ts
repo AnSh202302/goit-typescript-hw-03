@@ -5,7 +5,7 @@ abstract class House {
   constructor(key: Key) {
     this.key = key;
   }
-  comeIn(person: Person) {
+  comeIn(person: Person): void {
     if (this.door) {
       this.tenants.push(person);
     }
